@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhexin Zhu — Personal Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 个人简介容器 */
+    .profile-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    /* 左边照片部分 */
+    .profile-left {
+      flex: 1;
+      text-align: center;
+      min-width: 250px;
+    }
+
+    .profile-left img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+
+    .profile-left h2 {
+      margin: 10px 0 5px 0;
+    }
+
+    .profile-left p.title {
+      font-weight: 600;
+      color: #555;
+    }
+
+    /* 右边简介部分 */
+    .profile-right {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .experience {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .experience h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .experience ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zhu Lab</h1>
+    <h2 class="subtitle">SWI/SNF and disease</h2>
+    <nav>
+      <a href="index.html">🏠 Home</a> |
+      <a href="zhexin.zhu.html">👨‍🔬 Zhexin Zhu</a> |
+      <a href="news.html">📰 News</a> |
+      <a href="team.html">👥 Team</a> |
+      <a href="publications.html">📚 Publications</a> |
+      <a href="resources.html">🧪 Resources</a> |
+      <a href="index.html#contact">✉️ Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 上半部分：照片+简介 -->
+    <div class="profile-container">
+      <!-- 左边照片 -->
+      <div class="profile-left">
+        <img src="images/PI-photo.png" alt="Dr. Zhexin Zhu photo">
+      </div>
+
+      <!-- 右边简介 -->
+      <div class="profile-right">
+        <h2 class="name">Dr. Zhexin Zhu</h2>
+
+        <p class="title"> </p>
+        <p class="title">Research Focus: Epigenetic regulation of stem cells and aging-related diseases</p>
+
+        <p>
+          Awards & Projects: 2023 National Outstanding Young Talent Program; Shanghai Leading Talent; 2024 National Major Science and Technology Project on Four Major Chronic Diseases (Project Leader)
+        </p>
+
+        <p>
+          Professional Service: Reviewer for national science and technology awards and National Health Commission projects; peer reviewer for <em>Nature</em>, <em>Nature Communications</em>, <em>Cell Death & Disease</em>, <em>Genome Research</em>, <em>Stem Cell Research & Therapy</em>, and <em>Cell Discovery</em>.
+        </p>
+      </div>
+    </div>
+
+    <!-- 下半部分：研究经历 -->
+    <div class="experience">
+      <h3>RESEARCH EXPERIENCE</h3>
+      <ul>
+        <li>
+          <strong>Postdoctoral Fellow</strong> – St. Jude Children’s Research Hospital  
+          <br>2017.11 – 2023.05, Memphis, TN, USA
+        </li>
+        <li>
+          <strong>Postdoctoral Fellow</strong> – Wellcome Trust Sanger Institute  
+          <br>2016.12 – 2017.11, Cambridge, UK
+        </li>
+        <li>
+          <strong>Ph.D. and M.S. Student</strong> – Institute for Health Sciences, University of Chinese Academy of Sciences  
+          <br>2008.09 – 2016.06, Shanghai, China
+        </li>
+        <li>
+          <strong>B.Sc. in Biological Sciences</strong> – Ocean University of China  
+          <br>2004.09 – 2008.06, Qingdao, China
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

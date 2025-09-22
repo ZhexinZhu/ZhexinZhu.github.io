@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huang Lab — Internal Protocols</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #protocol-section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    #protocol-section h2 {
+      margin-top: 0;
+      font-size: 1.8em;
+      text-align: center;
+    }
+
+    #protocol-section p.description {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    #protocol-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #protocol-list li {
+      background: #f0f0f0;
+      margin-bottom: 12px;
+      padding: 12px 15px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    #protocol-list li a {
+      text-decoration: none;
+      color: #4682A9;
+      font-weight: 500;
+    }
+
+    #protocol-list li:hover {
+      background: #e0e8f0;
+    }
+
+    .restricted {
+      color: #d9534f;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zhu Lab</h1>
+    <h2 class="subtitle">SWI/SNF and disease</h2>
+    <nav>
+      <a href="index.html">🏠 Home</a> |
+      <a href="zhexin.zhu.html">👨‍🔬 Zhexin Zhu</a> |
+      <a href="news.html">📰 News</a> |
+      <a href="team.html">👥 Team</a> |
+      <a href="publications.html">📚 Publications</a> |
+      <a href="resources.html">🧪 Resources</a> |
+      <a href="index.html#contact">✉️ Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Protocol Section -->
+    <section id="protocol-section">
+      <h2>Internal Lab Protocols</h2>
+      <p class="description">These protocols are intended for internal lab members only. Please ensure you are logged in to access files.</p>
+
+<ul id="protocol-list">
+  <li><a href="#" onclick="accessProtocol('https://www.weiyun.com/disk/sharedir/e0dc311ed0d49d40c608d5f289b68e98')">Lab Protocols</a></li>
+  <li><a href="#" onclick="accessProtocol('protocols/生信分析规范.docx')">Lab-生信分析规范</a></li>
+  <li><a href="#" onclick="accessProtocol('protocols/实验室规范.docx')">Lab-实验室规范</a></li>
+
+</ul>
+
+<script>
+  function accessProtocol(filePath) {
+    // 设置你的密码
+    const password = "shanghai@2024";  
+    let userInput = prompt("Enter the lab password to access this file:");
+    if(userInput === password) {
+      window.open(filePath, "_blank");
+    } else {
+      alert("Incorrect password. Access denied.");
+    }
+  }
+</script>
+
+
+      <p class="restricted">⚠️ Only lab members with credentials can download these files.</p>
+    </section>
+  </main>
+</body>
+</html>

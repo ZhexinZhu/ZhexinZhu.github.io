@@ -1,0 +1,336 @@
+
+header, footer {
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #336699;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* ---------- Header 美化 ---------- */
+    header {
+      background-color: #F0F0F0;  /* 背景 */ /* transparent */
+      color: #074799;             /* 文字颜色 */
+      padding: 30px 20px;         /* 内边距 */
+      text-align: center;
+      border-radius: 8px;         /* 圆角框 */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);  /* 阴影效果 */
+      margin-bottom: 30px;
+    }
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 1000;
+  font-size: 3.5em;
+  color: #26667F;
+  margin: 0;
+}
+
+    header h2.subtitle {
+      font-size: 1.7em; /* 副标题 */
+      margin: 10px 0 20px 0;
+      font-weight: 600;
+    }
+
+    header nav a {
+      color: #113F67;       /* 导航文字白色 */
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      font-size: 1.3em;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Body & Layout ---------- */
+/*    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      color: #333;
+    }*/
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 2;
+      width: 70%; 
+      margin: auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    .content-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    /* 左边主要内容 */
+    .main-content {
+      flex: 3; /* 占3/4 */
+    }
+
+    /* 右边侧栏 */
+    .sidebar {
+      flex: 1; /* 占1/4 */
+    }
+
+    .sidebar section {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 8px;
+    }
+
+    /* 主页图片 */
+    #home-figure img {
+      max-width: 60%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+
+    /* Publication / News 列表 */
+    .publication-list li {
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+
+    /* DOI 链接符号 */
+    .doi-link::after {
+      content: " 📄"; 
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+/* 上方标题布局 */
+.header-top {
+  display: flex;
+  justify-content: space-between; /* 左右两边 */
+  align-items: center;
+}
+
+/* 主标题 */
+.header-top h1 {
+  font-size: 2rem;   /* 大一点 */
+  margin: 0;
+  color: #000;       /* 黑色 */
+}
+
+/* 副标题 */
+.header-top .subtitle {
+  font-size: 1.4rem; /* 比主标题小 */
+  margin: 0;
+  color: #000;       /* 仍然黑色 */
+  font-weight: normal; /* 可以调粗细 */
+}
+
+/* 两栏容器 */
+.content-container {
+  display: flex;
+  gap: 20px; /* 左右间距 */
+  margin: 20px;
+}
+
+/* 左边主要内容 */
+.main-content {
+  flex: 3; /* 占3/4 */
+}
+
+/* 右边侧栏 */
+.sidebar {
+  flex: 1; /* 占1/4 */
+}
+
+/* 侧栏样式 */
+.sidebar section {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 8px;
+}
+
+
+.publication-list li {
+  line-height: 1.5;    /* 行高 1.25 倍字体大小 */
+  margin-bottom: 1em; /* 每条之间稍微留点空隙（可选） */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.profile-right .name {
+  font-family: 'Georgia', serif; /* 改字体 */
+  color: #2a4d69;               /* 改颜色 */
+  font-size: 2em;               /* 字体大小 */
+  margin: 0 0 10px 0;           /* 与下面文字间距 */
+  font-weight: bold;
+}
+
+.profile-right .title {
+  font-weight: 600;
+  color: #555;
+  margin: 0;
+}
+
+
+.research-summary-box {
+  border: 2px solid #dce9f3;         /* 边框颜色 */
+  background-color: #f7fbff;         /* 背景色 */
+  border-radius: 10px;               /* 圆角 */
+  padding: 20px;                     /* 内边距 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 阴影 */
+  margin-top: 15px;                  /* 上边距 */
+}
+.research-summary-box ul {
+  margin-left: 20px; /* 保持列表缩进 */
+}
+
+
+#research-summary {
+  margin-top: 0px;   /* 上方间距 */
+  margin-bottom: 30px;
+}
+.research-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.research-image {
+  flex: 2;             
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-image img {
+  width: 100%;
+  max-width: 700px;    /* 最大宽度增大 */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 400px; /* 设置统一高度 */
+  display: flex;
+  align-items: center;  /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  overflow: hidden; /* 超出的部分隐藏 */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover: 填满整个区域，可能裁剪，contain: 保持完整显示，可能留空白 */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-btn {
+  background-color: #DDF4E7; /* 你想要的颜色 */
+  border: none;
+  color: #4682A9; /* 按钮上的箭头颜色 */
+  font-size: 2em;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: #BEE8D6; /* 悬停时颜色变化 */
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(70,130,169,0.9);
+}
+

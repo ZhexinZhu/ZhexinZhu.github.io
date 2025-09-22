@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhu Lab — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .content-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .main-content {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    #home-figure {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    #home-figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zhu Lab</h1>
+    <h2 class="subtitle">SWI/SNF and disease</h2>
+    <nav>
+      <a href="#home">🏠 Home</a> |
+      <a href="zhexin.zhu.html">👨‍🔬 Zhexin Zhu</a> |
+      <a href="news.html">📰 News</a> |
+      <a href="team.html">👥 Team</a> |
+      <a href="publications.html">📚 Publications</a> |
+      <a href="resources.html">🧪 Resources</a> |
+      <a href="#contact">✉️ Contact</a>
+    </nav>
+  </header>
+
+  <div class="content-container">
+    <!-- 左边主要内容 -->
+    <div class="main-content">
+      <section id="home">
+        <div id="home-figure" class="carousel-container">
+  <div class="carousel-track">
+    <div class="carousel-item"><img src="images/23Nature-ZhuZ.png" alt="Lab overview 1"></div>
+    <div class="carousel-item"><img src="images/20CellStemCell-ZhuZ.png" alt="Lab overview 2"></div>
+  </div>
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
+
+
+
+<script>
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.children);
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+let index = 0;
+
+function updateCarousel() {
+  const width = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${index * width}px)`;
+}
+
+nextBtn.addEventListener('click', () => {
+  index = (index + 1) % items.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  index = (index - 1 + items.length) % items.length;
+  updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+</script>
+
+    </div>
+
+    <!-- 右边侧栏 -->
+    <aside class="sidebar">
+      <section class="collaborators">
+        <h2>Collaborators</h2>
+        <ul>
+          <li><a href="https://github.com/HuangXinLab" target="_blank">Dr. Xin Huang</a></li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=Cdsnr-sAAAAJ&hl=zh-CN&oi=ao" target="_blank">Google Scholar</a></li>
+          <li><a href="https://www.ihm.ac.cn/?c=127&m=50" target="_blank">Homepage</a></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: zhexin.zhu@ihm.ac.cn</p>
+      </section>
+    </aside>
+  </div>
+
+  <!-- 🔻 Research Summary 全宽区块 🔻 -->
+<section id="research-summary" style="margin-top:15px;">
+  <h2>Research Summary</h2>
+
+
+  <!-- 上半部分：图片+文字，带白色背景 -->
+  <div class="research-top" style="display:flex; flex-wrap:wrap; gap:20px; padding:30px; border-radius:12px; margin-bottom:30px; background-color:#ffffff; box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+    <div class="research-image" style="flex:2.5; min-width:300px; text-align:center;">
+      <img src="images/ResearchSummary.png" alt="Research summary figure" style="width:100%; max-width:600px; height:auto; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+    </div>
+    <div class="research-text" style="flex:2; min-width:300px; display:flex; align-items:center;">
+      <p style="font-size:1.05em; line-height:1.6;">
+        Dr. Zhexin Zhu focuses on systematically studying the role of chromatin regulators in epigenetic control using stem cells and tumor models. He has published as first or corresponding author in <em>Nature</em> and <em>Cell Stem Cell</em>. Notably, his study on the PHB/HIRA chromatin complex in human embryonic stem cells uncovering a novel "epigenetic-metabolic" circuit (Z. Zhu et al., <em>Cell Stem Cell</em>, 2017) received an Exceptional Recommendation from F1000. His work on the SWI/SNF chromatin remodeling complex maintaining epigenetic memory and determining cell fate across generations (Z. Zhu et al., <em>Nature</em>, 2023) was also recommended by F1000 and highlighted in <em>Nature Reviews Molecular Cell Biology</em>.
+      </p>
+    </div>
+  </div>
+
+  <!-- 下半部分：整行文字+列表，也带白色背景 -->
+  <div class="research-bottom" style="padding:25px; border-radius:12px; background-color:#ffffff; box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+    <p style="font-size:1.05em; line-height:1.6;">
+      The Zhu Lab currently focuses on integrating gene editing, biochemistry, and epigenetics using newly developed experimental platforms—including human synthetic "embryo-like" models, reversible protein degradation mice, and mitotic-specific protein degradation mice—to study development and aging disease models:
+    </p>
+    <ul style="font-size:1.05em; line-height:1.6;">
+      <li>Investigating tumor suppressor SWI/SNF mutations across multiple tissues to explore novel targets and therapeutic strategies.</li>
+      <li>Studying the mitotic bookmarking functions of SWI/SNF and PRC complexes: how they maintain and remodel cell fate, and how their perturbation leads to disease.</li>
+      <li>Digital assessment of organoid and composite organoid systems.</li>
+    </ul>
+  </div>
+
+</section>
+
+  <footer>
+    <p>&copy; 2025 Zhu Lab. All rights reserved.</p>
+  </footer>
+</body>
+</html>
