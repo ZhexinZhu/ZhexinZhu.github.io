@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Huang Lab — News</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .timeline {position:relative;max-width:900px;margin:50px auto;padding-left:19px;}
+    .timeline::before {content:"";position:absolute;left:41.6px;top:0;bottom:0;width:2px;background:#e5e5e5;box-shadow:none;}
+    .timeline-item {position:relative;margin-bottom:25px;padding-left:40px;}
+    .timeline-item::before {content:"";position:absolute;left:16px;top:8px;width:12px;height:12px;background:#579ebd;border-radius:50%;border:2px solid white;box-shadow:0 0 0 2px #579ebd;}
+    .lab-title {text-align:center;}
+    .timeline-date {font-weight:normal;font-size:1em;margin-bottom:2px;color:#333;}
+    .timeline-content {margin-left:10px;display:flex;flex-direction:column;align-items:flex-start;}
+    .timeline-content p {font-family:"Georgia","Times New Roman",serif;font-weight:400;font-size:1em;line-height:1.6;text-align:left;color:#555;margin:0 0 10px 0;max-width:1200px;}
+    .timeline-content img {width:300px;max-width:100%;height:auto;border-radius:6px;display:block;margin:0;}
+  </style>
+
 </head>
 <body>
   <header>
@@ -25,13 +38,39 @@
   <main>
       <!-- 继续添加年度新闻或论文 -->
 <p style="text-align: center; font-size: 1.3em; margin-top: 20px;">
-  Visit our joint lab updates: 
+  For more detailed updates, visit our joint lab page: 
   <a href="https://huangxinlab.github.io/news.html" target="_blank" 
-     style="padding: 8px 16px; background-color:#B8DB80; color:white; border-radius:6px; text-decoration:none; font-size:1em;">
+     style="padding: 8px 16px; background-color:#579ebd; color:white; border-radius:6px; text-decoration:none; font-size:1em;">
     Huang Lab News
   </a>
 </p>
     </ul>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">July 2026</div>
+        <div class="timeline-content">
+          <p>Dr. Zhu and Dr. Huang visited the School of Medicine, Tsinghua University, and met with Dr. Zhu's former mentor, Dr. Charlie, from St. Jude Children’s Research Hospital.</p>
+          <img src="images/202607_huang_zhu_Tsinghua University School of Medicine.png" alt="Visit to Tsinghua University School of Medicine">
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-date">June 2025</div>
+        <div class="timeline-content">
+          <p>Dr. Huang presented at the ISSCR Annual Meeting and, together with Dr. Zhu, visited Prof. Pengtao’s beautiful seaside lab.</p>
+          <img src="images/202506_huang_ISSCR Annual Meeting.png" alt="ISSCR Annual Meeting">
+          <img src="images/202506_huang_zhu_visit Prof. Pengtao Liu’s seaside laboratory.png" alt="ISSCR Annual Meeting">
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">October 2023</div>
+        <div class="timeline-content">
+          <p>Dr. Zhu gave an invited talk at the Chinese Stem Cell Annual Meeting.</p>
+          <img src="images/202310_zhu_Chinese Stem Cell Annual Meeting.png" alt="Chinese Stem Cell Annual Meeting">
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
